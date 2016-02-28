@@ -1,4 +1,34 @@
 h1 {
-color:navy;
-font-family: "Times New Roman", Georgia, Serif;
+font-family: "Champagne & Limousines", Georgia, Serif;
+margin:1px;
+font-size: 50px;
+}
+h2{
+	margin: 50px;
+	padding: 10px;
+}
+img.buttons{
+	width:15%;
+	height:15%;
+}
+/* Note these are centered, therefore reversed , add ID*/
+img.MoveLeft{
+	position: relative;
+	left: 150px;
+}
+img.MoveRight{
+	position: relative;
+	right: 150px;
+}
+#test {
+background-color: navy;
+width: 100px;
+height: 100px;
+
+
+}
+
+#test:hover{
+background-color: red;
+
 }
