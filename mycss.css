@@ -1,10 +1,29 @@
-h1 {
-font-family: "Champagne & Limousines", Georgia, Serif;
-margin:1px;
-font-size: 50px;
+.addspace{
+	margin: 30px
 }
+
+.CLfont {
+font-family: "Champagne & Limousines", Georgia, Serif;
+font-size: 50px;
+margin: 1px;
+}
+.CLfont2{
+	font-family: "Champagne & Limousines", Georgia, Serif;
+    margin:1px;
+    font-size: 24px;
+}
+body{
+	background-color: rgb(35,79,50);
+}
+#white{
+	background-color: white;
+	width: 60%;
+	margin: 0 auto;
+	padding: 0px;
+}
+
 h2{
-	margin: 50px;
+	margin: 30px;
 	padding: 10px;
 }
 img.buttons{
@@ -14,11 +33,11 @@ img.buttons{
 /* Note these are centered, therefore reversed , add ID*/
 img.MoveLeft{
 	position: relative;
-	left: 150px;
+	left: 75px;
 }
 img.MoveRight{
 	position: relative;
-	right: 150px;
+	right: 75px;
 }
 #test {
 background-color: navy;
