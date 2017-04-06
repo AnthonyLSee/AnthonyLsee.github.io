@@ -39,6 +39,9 @@ img.buttons{
 	width:15%;
 	height:15%;
 }
+
+
+
 /* Note these are centered, therefore reversed , add ID*/
 img.MoveLeft{
 	position: relative;
@@ -65,4 +68,31 @@ background-color: red;
     background-position:absolute;
     width:550px;
     height:400px;
+}
+
+
+/*__________________ About Me page __________________*/
+
+.paragraphLarge{
+	float: left;
+	font-family: "Champagne & Limousines", Georgia, Serif;
+	font-size: 50px;
+	margin: 1px;
+}
+
+.paragraphSmall{
+	float: left;
+	font-family: "Champagne & Limousines", Georgia, Serif;
+	font-size: 15px;
+	margin: 10px;
+}
+
+.opqrectangle {
+
+  	opacity: 0.5;
+  	background-color: white;
+	width: 800px;
+	height: 500px;
+	margin: 30px
+
 }
