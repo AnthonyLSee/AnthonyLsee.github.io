@@ -122,9 +122,27 @@ body {
         text-align: left;
     }
 
-    .content-list p{
+    .content-list p {
         text-align: center;
     }
+
+
+    .content-image-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content-image-container img {
+        width: 90%;
+        height: auto;
+        margin: 10px 10px;
+    }
+
+    .content-image-container p {
+        text-align: center;
+    }
+
 
 
     .button-container{
@@ -229,6 +247,22 @@ body {
         margin: 0px 6em 0px 6em;
     }
 
+
+    .content-image-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .content-image-container img {
+        width: 50%;
+        height: auto;
+        margin: 10px 10px;
+    }
+
+    .content-image-container p {
+        text-align: center;
+    }
 
     .button-container{
         padding-top: 35em;

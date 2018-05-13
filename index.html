@@ -56,12 +56,12 @@
                 <p>6) The summarization algorithm returns a summarized block of text and gives it to sum.pal</p>
                 <p>7) sum.pal prints it into the groupchat. </p>
             </div>
-
             <h3> Here's the code:</h3>
             <div class = "button-content-container">
                 <a href = "https://github.com/AnthonyLSee/sum.pal" class = "button-content">GitHub Page</a>
             </div>
             <hr>
+
 
             <h2>hey_Baymax</h2>
             <h3>A Twitter bot that provides a diagnosis based on your message.</h3>
@@ -76,22 +76,56 @@
                     <p>4) The symptoms then run through an algorithm that decides an illness or lack of	</p>
                     <p>5) Hey_baymax sends a tweet with the results</p>
             </div>
-
-            <h3> Here's the code:</h3>
+            <h3>Here's the code:</h3>
             <div class = "button-content-container">
                 <a href = "https://github.com/AnthonyLSee/hey_baymax" class = "button-content">GitHub Page</a>
             </div>
             <hr>
 
             <h2>Multithreaded Chatroom</h2>
-            <h3>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h3>
+            <h3>^ Read the title ^</h3>
+            <p>This is a project that uses multiple concepts such as multithreading,
+            networking, sockets, and more. It is completely coded in C and is in terminal.
+            It has two main files, the server code and client code. Each of these files
+            include its own functions and code that works with the purpose of the files.</br>
+            The Chatroom comes with multiple other features which includes room size,
+            colored names for each user, username checking, ablitiy to see list of members, and save chat history.</p>
+            <h3>Here's how it works</h3>
+            <div class = "content-list">
+                    <p>1) Server Code Starts, waiting for any user requests</p>
+                    <p>2) User Code Starts and User inserts valid username</p>
+                    <p>3) After making sure the username is clean, the User has access to the room</p>
+                    <p>4) User can run commands such as @who and @exit that shows whos in the group chat and to exit respectivly</p>
+            </div>
+            <p>In terms of code, it uses C’s pthread library to create a thread for
+                each user and waits. The client code sends a request with its username
+                and socket descriptor. Server validates the info then lets the client
+                continue. The server then also uses a function that creates a User Object
+                / Struct based on the info the client provides, which includes the username,
+                color, and socket descriptor. This User Object is inserted into a User Object
+                Array, acting as its “database.”
+                </br></br>There essentially two important threads, reading and writing.
+                The client creates a thread that is always listening for messages,
+                reading, and a thread that asks for user input, writing. When a message
+                is sent, the server reads it and then uses the database and the socket
+                descriptors to send the message out. The server code includes a writeToAllUsers()
+                function that includes a for loop, a write function with the socket descriptor,
+                and the message. It loops through all the user objects, grabbing its descriptor,
+                and sends out the message. </p>
+            <h3>Here's the code:</h3>
             <div class = "button-content-container">
                 <a href = "https://github.com/AnthonyLSee/Multithreaded-Chatroom-in-C" class = "button-content">GitHub Page</a>
             </div>
             <hr>
 
             <h2>Other + GitHub</h2>
-            <h3>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h3>
+            <h3>I have many other projects up on my GitHub. Feel free to check it out.</h3>
+            <div class = "content-list">
+                    <p>- A GUI revolving around a Database, using Java, JavaFX, and SQL</p>
+                    <p>- "Unrelaiable" UDP Demonstration, using C and Networking Concepts</p>
+                    <p>- AnthonyLSee.github.io / This Website, using HTML, CSS, and JS/jquery</p>
+            </div>
+            <h3>Check out my GitHub:</h3>
             <div class = "button-content-container">
                 <a href = "https://github.com/AnthonyLSee" class = "button-content">My GitHub</a>
             </div>
@@ -105,8 +139,31 @@
         <div class = "content-container">
             <h1>Few Projects</h1>
             <hr>
-            <h2>ACS and KSA's</br> Design and Style</h2>
-            <h3>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h3>
+            <h2>ACS and KSA of Rutgers Camden</br>Art Direction</h2>
+            <h3>Creating a visual identity for the Asian Cultural Society and the Koreans Students Association at Rutgers Camden</h3>
+            <p>For ACS, in the beginning it was more towards flat / minimalistic design.
+                The graphics will emphasize the color scheme, red and white, of ACS. When I
+                became president and left the PR Rep position from KSA, both ACS and my own style
+                changed and developed. It was more centered around very modern and professional
+                design but kept the emphasis on the red colors through red color overlays on high quality images.</p>
+            <p style= "text-align:center">2015-2016 and 2017-2018 aesthetic respectivly</p>
+            <div class = "content-image-container">
+                <img src="graphics/acs-example1.jpg">
+                <img src="graphics/acs-example2.png">
+            </div>
+            </br>
+            <p>For KSA, the style was a modern aesthetic that emphasizes more of the logo then any
+                other element. A big idea I wanted to hit on was making the designs “cool” and “slick.”
+                This is done by emphasizing the logo, by changing it to all white, which is on top of very
+                modern / city images that is split in half and reflected on both sides. I was also not
+                afraid to stray away from the style if the event calls for it which can be seen in KSA’s
+                Star Search Designs.</p>
+            <p style= "text-align:center">A General Facebook Banner and a Facebook Event Banner </p>
+            <div class = "content-image-container">
+                <img src="graphics/ksa-example1.jpg">
+                <img src="graphics/ksa-example2.jpg">
+            </div>
+            <h3>Check out the Album Pages:</h3>
             <div class = "button-content-container">
                 <a href = "https://photos.app.goo.gl/150HrSA0nHsDNzcN2" class = "button-content">ACS Album Page</a>
                 <a href = "https://goo.gl/photos/5eQFkkpyPu2gzAiN6" class = "button-content">KSA Album page</a>
@@ -114,9 +171,9 @@
             <hr>
 
             <h2>"Aesthetically Average" Project</h2>
-            <h3>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h3>
+            <h3>An Instagram page demonstrating and practicing Experimental and Abstract graphics</h3>
             <div class = "button-content-container">
-                <a href = "#" class = "button-content">Album page</a>
+                <a href = "https://www.instagram.com/aesthetically.average.art/" class = "button-content">AA Instagram</a>
             </div>
             <hr>
 
