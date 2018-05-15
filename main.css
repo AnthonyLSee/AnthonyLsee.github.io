@@ -37,7 +37,9 @@ body {
 
 
 @media only screen and (min-width: 300px) {
-    .parallax {
+    /* parallax -----------------------------------------------------
+     * - image effect
+     */    .parallax {
         height: 550px;
         background-color: Red;
         background-attachment: fixed;
@@ -55,6 +57,9 @@ body {
     }
     .parallax-image-three {
         background-image: url("graphics/image3.jpg");
+    }
+    .parallax-image-four {
+        background-image: url("graphics/image4.jpg");
     }
 
     .parallax p {
@@ -100,7 +105,9 @@ body {
         margin-top: .5em;
     }
 
-
+    /* content -----------------------------------------------------------------
+     * - Holds all the content, puts in column.
+     */
     .content-container {
         display: flex;
         flex-direction: column;
@@ -142,7 +149,9 @@ body {
         text-align: center;
     }
 
-
+    /* content-image  -------------------------------------------------
+     * - For images inside a content container
+     */
     .content-image-container {
         display: flex;
         flex-direction: column;
@@ -159,7 +168,9 @@ body {
         text-align: center;
     }
 
-
+    /* button  ----------------------------------------------------------------
+     * - Code for buttons
+     */
     .button-container{
         padding-top: 16em;
         display: flex;
@@ -216,7 +227,7 @@ body {
 
 @media only screen and (min-width: 768px){
     .parallax {
-        height: 700px;
+        height: 625px;
         background-color: Red;
         background-attachment: fixed;
         background-position: center;
@@ -256,7 +267,7 @@ body {
         font-family: 'Heebo', sans-serif;
         color : #efefef;
         font-size: 3em;
-        margin-top: 5.5em;
+        margin-top: 4.5em;
         margin-bottom: 0;
     }
 
@@ -292,13 +303,13 @@ body {
         text-align: center;
     }
 
+
     .button-container{
-        padding-top: 35em;
+        padding-top: 33em;
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
-
 
     .button {
         font-family: 'Heebo', sans-serif;
@@ -344,6 +355,8 @@ body {
 
 
 #myBtn {
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; /* Safari */
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
@@ -358,6 +371,7 @@ body {
     padding: 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
     font-size: 18px; /* Increase font size */
+    border: 1px solid white;
 }
 
 #myBtn:hover {

@@ -5,13 +5,27 @@ $(function(){$(".coding-button").click(function(){
     $("html,body").animate({
         scrollTop:$(".coding-dest").offset().top},"1000");return false})})
 
-
-
-
 $(function(){$(".design-button").click(function(){
     $("html,body").animate({
         scrollTop:$(".design-dest").offset().top},"1000");return false})})
 
+$(function(){$(".contact-button").click(function(){
+    $("html,body").animate({
+        scrollTop:$(".contact-dest").offset().top},"1000");return false})})
+
+$(function(){$(".top-button").click(function(){
+    $("html,body").animate({
+        scrollTop:$(".top-dest").offset().top},"1000");return false})})
+
+
+
+function copyToClipboard() {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val("as2242@scarletmail.rutgers.edu").select();
+  document.execCommand("copy");
+  $temp.remove();
+}
 
 
 /* js for sticky back to top button */
