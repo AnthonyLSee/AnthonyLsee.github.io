@@ -223,6 +223,31 @@ body {
         cursor: pointer;
         -webkit-transition-duration: 0.4s; /* Safari */
     }
+
+
+    .button-resume {
+        border: 2px solid #efefef;
+        font-family: 'Heebo', sans-serif;
+        font-size: 20px;
+        line-height: 74px;
+        width: 12em;
+        height: 3.5em;
+        color: white;
+        background-color: #a63446;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 1em;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s; /* Safari */
+    }
+
+    .button-resume:hover {
+        background-color: #efefef;
+        color: #a63446;
+        border: 2px solid #a63446;
+    }
 }
 
 @media only screen and (min-width: 768px){
@@ -349,6 +374,10 @@ body {
     .button-content{
         margin-left: 1em;
         margin-right: 1em;
+    }
+
+    .button-resume {
+        width: 40.5em
     }
 }
 
