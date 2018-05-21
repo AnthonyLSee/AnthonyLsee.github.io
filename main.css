@@ -31,6 +31,7 @@ body {
     background-color: #efefef;
 }
 
+
 @media only screen and (min-width: 300px) {
     /* ----- paralax ----- */
     .parallax {
