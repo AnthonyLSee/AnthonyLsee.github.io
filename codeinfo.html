@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Anthony See</title>
+        <meta charset="utf-8">
+        <meta name = "author" content="Anthony See">
+        <meta name = "description" content="Coding Projects of Anthony See">
+        <meta name = "title" content="Anthony See">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:900" rel="stylesheet">-->
+        <link href="https://fonts.googleapis.com/css?family=Heebo:800|Open+Sans" rel="stylesheet">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="main.js"></script>
+    </head>
+
+    <body>
+        <div class = "parallax parallax-image-two coding-dest">
+            <p>Coding</p>
+            <h3>Experience with Python, C, Java, C++, mySQL, HTML, CSS</h3>
+            <h4>Knows concepts such as Object Oriented Programming, Multithreading, Networking, OS, and more.</h4>
+        </div>
+        <div class = "content-container">
+            <h1>Some Examples</h1>
+            <hr>
+            <h2>sum.pal</h2>
+            <h3>Intelligent GroupMe Bot that will sum up or categorize previous messages beyond a fixed parameter.</h3>
+            <p><b>sum.pal</b> is a tool that summarizes text messages for large group chats to make user’s lives easier.
+                The main idea is this : Say you are in a large group chat, social or work, and the chat gets flooded with
+                messages when you are busy. In order to catch up, the user must go back and read all the unread messages
+                which could be either small as 20 texts to 100 texts. <b>sum.pal</b> is designed to fix this issue.
+            </br></br><b>sum.pal</b> is coded in Python and uses GroupMe’s bot tools, a Python API called Groupy, and a summarizing algorithm found online.</p>
+            <h3>Here's how it works</h3>
+            <div class = "content-list">
+                <p>1) sum.pal always looking at the most recent messages</p>
+                <p>2) User calls @sum.pal in the groupchat</p>
+                <p>3) sum.pal then grabs the most recent messages</p>
+                <p>4) sum.pal concatenates all the messages together into a block of text</p>
+                <p>5) sum.pal runs the block of text into the summarization algorithm</p>
+                <p>6) The summarization algorithm returns a summarized block of text and gives it to sum.pal</p>
+                <p>7) sum.pal prints it into the groupchat. </p>
+            </div>
+            <h3> Here's the code:</h3>
+            <div class = "button-content-container">
+                <a href = "https://github.com/AnthonyLSee/sum.pal" class = "button-content">GitHub Page</a>
+            </div>
+            <hr>
+
+
+            <h2>hey_Baymax</h2>
+            <h3>A Twitter bot that provides a diagnosis based on your message.</h3>
+            <p><b>Hey_Baymax</b> is a python bot that uses Twitter’s API to diagnosis you based on the
+            symptoms your provide in your tweet. Whenever a user calls on Hey_Baymax’s twitter handle,
+            it then will take the message and use different algorithms and code to make a message to send back.</p>
+            <h3>Here's how it works</h3>
+            <div class = "content-list">
+                    <p>1) Hey_Baymax is waiting for any tweets</p>
+                    <p>2) User Sends a tweet with a list of their symptoms</p>
+                    <p>3) Hey_Baymax then grabs the symptoms to be analyzed</p>
+                    <p>4) The symptoms then run through an algorithm that decides an illness or lack of	</p>
+                    <p>5) Hey_baymax sends a tweet with the results</p>
+            </div>
+            <h3>Here's the code:</h3>
+            <div class = "button-content-container">
+                <a href = "https://github.com/AnthonyLSee/hey_baymax" class = "button-content">GitHub Page</a>
+            </div>
+            <hr>
+
+            <h2>Multithreaded Chatroom</h2>
+            <h3>^ Read the title ^</h3>
+            <p>This is a project that uses multiple concepts such as multithreading,
+            networking, sockets, and more. It is completely coded in C and is in terminal.
+            It has two main files, the server code and client code. Each of these files
+            include its own functions and code that works with the purpose of the files.</br>
+            The Chatroom comes with multiple other features which includes room size,
+            colored names for each user, username checking, ablitiy to see list of members, and save chat history.</p>
+            <h3>Here's how it works</h3>
+            <div class = "content-list">
+                    <p>1) Server Code Starts, waiting for any user requests</p>
+                    <p>2) User Code Starts and User inserts valid username</p>
+                    <p>3) After making sure the username is clean, the User has access to the room</p>
+                    <p>4) User can run commands such as @who and @exit that shows whos in the group chat and to exit respectivly</p>
+            </div>
+            <p>In terms of code, it uses C’s pthread library to create a thread for
+                each user and waits. The client code sends a request with its username
+                and socket descriptor. Server validates the info then lets the client
+                continue. The server then also uses a function that creates a User Object
+                / Struct based on the info the client provides, which includes the username,
+                color, and socket descriptor. This User Object is inserted into a User Object
+                Array, acting as its “database.”
+                </br></br>There essentially two important threads, reading and writing.
+                The client creates a thread that is always listening for messages,
+                reading, and a thread that asks for user input, writing. When a message
+                is sent, the server reads it and then uses the database and the socket
+                descriptors to send the message out. The server code includes a writeToAllUsers()
+                function that includes a for loop, a write function with the socket descriptor,
+                and the message. It loops through all the user objects, grabbing its descriptor,
+                and sends out the message. </p>
+            <h3>Here's the code:</h3>
+            <div class = "button-content-container">
+                <a href = "https://github.com/AnthonyLSee/Multithreaded-Chatroom-in-C" class = "button-content">GitHub Page</a>
+            </div>
+            <hr>
+
+            <h2>Other + GitHub</h2>
+            <h3>I have many other projects up on my GitHub. Feel free to check it out.</h3>
+            <div class = "content-list">
+                    <p>- A GUI revolving around a Database, using Java, JavaFX, and SQL</p>
+                    <p>- "Unrelaiable" UDP Demonstration, using C and Networking Concepts</p>
+                    <p>- AnthonyLSee.github.io / This Website, using HTML, CSS, and JS/jquery</p>
+            </div>
+            <h3>Check out my GitHub:</h3>
+            <div class = "button-content-container">
+                <a href = "https://github.com/AnthonyLSee" class = "button-content">My GitHub</a>
+            </div>
+            <hr>
+        </div>
+    </body>
+</html>
